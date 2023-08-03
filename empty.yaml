@@ -12,19 +12,6 @@ components:
   - attributes:
       controller.devfile.io/merge-contribution: true
     container:
-      env:
-        - name: CHE_DASHBOARD_URL
-          value: https://devspaces.apps.cluster-5qz85.5qz85.sandbox3098.opentlc.com
-        - name: CHE_PLUGIN_REGISTRY_URL
-          value: https://devspaces.apps.cluster-5qz85.5qz85.sandbox3098.opentlc.com/plugin-registry/v3
-        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
-          value: http://plugin-registry.openshift-operators.svc:8080/v3
-        - name: CLUSTER_CONSOLE_URL
-          value: https://console-openshift-console.apps.cluster-5qz85.5qz85.sandbox3098.opentlc.com
-        - name: CLUSTER_CONSOLE_TITLE
-          value: OpenShift console
-        - name: OPENVSX_REGISTRY_URL
-          value: ''
       image: quay.io/vbroniko/devspaces/udi@sha256:c660ba984f1f016b8f563801b09ed95edf6784952872ec87d18711d13ee1c15a
       sourceMapping: /projects
     name: universal-developer-image
