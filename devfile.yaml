@@ -12,6 +12,6 @@ components:
   - attributes:
       controller.devfile.io/merge-contribution: true
     container:
-      image: quay.io/vbroniko/devspaces/udicntlm
+      image: quay.io/vbroniko/devspaces/udicntlm:v0.1
       sourceMapping: /projects
     name: universal-developer-imagecntlm
